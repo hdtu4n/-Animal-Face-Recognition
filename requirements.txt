@@ -1,0 +1,28 @@
+# Core ML libraries
+torch>=2.0.0
+torchvision>=0.15.0
+torchsummary>=1.5.1
+
+# Data processing
+numpy>=1.21.0
+pandas>=1.5.0
+scikit-learn>=1.2.0
+pillow>=9.0.0
+
+# Visualization
+matplotlib>=3.5.0
+plotly>=5.0.0
+
+# GUI Application
+tk
+
+# Web Applications
+streamlit>=1.25.0
+flask>=2.3.0
+
+# Optional: For better performance
+# torchaudio>=2.0.0  # Uncomment if needed
+
+# Development tools (optional)
+# jupyter>=1.0.0
+# ipykernel>=6.0.0
