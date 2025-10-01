@@ -3,6 +3,7 @@ from tkinter import filedialog, messagebox, ttk
 from PIL import Image, ImageTk
 from animal_classifier import AnimalClassifier
 import os
+import random
 
 class AnimalClassifierGUI:
     def __init__(self, root):
@@ -262,7 +263,8 @@ class AnimalClassifierGUI:
                 files = [f for f in os.listdir(sample_dir) 
                         if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
                 if files:
-                    sample_path = os.path.join(sample_dir, files[0])
+                    random_file = random.choice(files)
+                    sample_path = os.path.join(sample_dir, random_file)
                     self.load_image(sample_path)
                 else:
                     messagebox.showwarning("Cảnh báo", "Không tìm thấy ảnh trong thư mục mẫu")
